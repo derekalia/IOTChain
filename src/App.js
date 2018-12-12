@@ -38,4 +38,5 @@ const Header = styled.div`
   display: flex;
   padding: 15px;
   justify-content: space-between;
+  border-bottom: solid 1px black;
 `;
