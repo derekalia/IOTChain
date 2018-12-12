@@ -15,19 +15,19 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
+      <SetFont className="App">
         <Header>
           <div>
-            <div>Airlytics</div>
+            <div style={{ color: 'white', fontWeight: 'bold' }}>Airlytics</div>
           </div>
           <div style={{ display: 'flex', justifyContent: 'space-between', width: '15%' }}>
-            <div>About</div>
-            <div>Explore</div>
+            {/* <div>About</div> */}
+            <div style={{ color: 'white' }}>Explore</div>
           </div>
         </Header>
 
         {this.state.loggedIn ? <Dashboard /> : <Login onLogin={this.onLogin} />}
-      </div>
+      </SetFont>
     );
   }
 }
@@ -39,4 +39,12 @@ const Header = styled.div`
   padding: 15px;
   justify-content: space-between;
   border-bottom: solid 1px black;
+  background-color: #3d69ab;
+`;
+
+const SetFont = styled.div`
+  font-family: 'Proxima Soft', sans-serif;
+
+  /* margin: -8px; */
+  /* background-color: #f7f7f8; */
 `;

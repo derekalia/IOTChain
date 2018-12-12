@@ -9,9 +9,9 @@ class Login extends Component {
           <LoginBox>
             <div style={{ fontSize: '18px', marginBottom: '20px' }}>Login</div>
 
-            <div style={{ textAlign: 'left', fontSize: '16px', marginBottom: '5px' }}>Username</div>
+            <div style={{ textAlign: 'left', fontSize: '16px', marginBottom: '5px', marginLeft: '40px' }}>Username</div>
             <InputStyle type="text" />
-            <div style={{ textAlign: 'left', fontSize: '16px', marginBottom: '5px' }}>Password</div>
+            <div style={{ textAlign: 'left', fontSize: '16px', marginBottom: '5px', marginLeft: '40px' }}>Password</div>
             <InputStyle type="password" />
 
             <BtnSubmit onClick={this.props.onLogin}>Submit</BtnSubmit>
@@ -53,4 +53,5 @@ const InputStyle = styled.input`
   font-size: 16px;
   margin-bottom: 20px;
   width: 200px;
+  margin-left: 40px;
 `;
